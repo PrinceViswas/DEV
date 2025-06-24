@@ -1,0 +1,13 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Sample data
+data = {'Category': ['A', 'B', 'C', 'D'], 'Values': [10, 20, 15, 30]}
+df = pd.DataFrame(data)
+
+# Bar plot
+plt.figure(figsize=(8, 5))
+sns.barplot(x='Category', y='Values', data=df)
+plt.title('Sample Bar Plot')
+plt.show()
